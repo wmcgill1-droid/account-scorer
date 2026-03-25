@@ -682,7 +682,12 @@ if uploaded:
                 sdf = pd.read_excel(xls, sheet_name=sheet)
                 if not _has_real_headers(sdf):
                     sdf = pd.read_excel(xls, sheet_name=sheet, header=None)
-                sdf["_team_member"] = sheet
+                # Use sheet name as team member, unless it's a generic name
+                generic_sheets = {"sheet1", "sheet 1", "data", "accounts", "companies", "list", "export"}
+                if sheet.strip().lower() in generic_sheets and len(xls.sheet_names) == 1:
+                    sdf["_team_member"] = "Uploaded"
+                else:
+                    sdf["_team_member"] = sheet
                 frames.append(sdf)
             all_companies = pd.concat(frames, ignore_index=True)
 
@@ -798,6 +803,21 @@ if uploaded:
             if "status" in _col_lower(col) or _col_lower(col) == "status":
                 status_col = col
                 break
+
+        # Find rep/owner column — override _team_member if a dedicated column exists
+        rep_col = None
+        rep_patterns = ("owner", "rep", "sales rep", "assigned to", "team member",
+                        "account owner", "account executive", "ae", "bdm", "bdr")
+        for col in all_companies.columns:
+            cl = _col_lower(col)
+            if cl in rep_patterns or any(rp in cl for rp in ("owner", "assigned", "sales rep", "team member")):
+                if col != "_team_member":
+                    rep_col = col
+                    break
+        if rep_col:
+            # Override the sheet-name-based _team_member with actual rep column
+            all_companies["_team_member"] = all_companies[rep_col].fillna("Unassigned").astype(str).str.strip()
+            st.success(f"✅ Found rep column: **{rep_col}** — accounts will be grouped by rep.")
 
         # Filter to Can Prospect only
         if status_col:
@@ -1714,6 +1734,101 @@ a:hover {{ text-decoration: underline; }}
                         st.markdown(f"  - {c}")
 
                 st.markdown("---")
+
+    # ── Campaign View (by Competitive Solution) ──────────────────────
+    st.divider()
+    st.markdown("""
+    <h2 style="font-size: 1.5rem; font-weight: 700; color: #0F172A; letter-spacing: -0.02em;">
+        🎯 Campaign View — By Competitive Solution
+    </h2>
+    <p style="color: #64748B; margin-top: 0.25rem;">
+        Accounts grouped by the competitive tools they use. Use these for targeted rip-and-replace campaigns.
+    </p>
+    """, unsafe_allow_html=True)
+
+    # Build campaign groups: competitive_tool -> [accounts]
+    campaign_groups = {}
+    for r in results:
+        seen_tools_for_account = set()
+        # From website tech detection
+        for t in r.get("technologies", []):
+            cat = t.get("category", "")
+            name = t.get("name", "")
+            if cat in HIDE_CATEGORIES:
+                continue
+            sf_sol = _get_sf_solution(name, cat)
+            if sf_sol and sf_sol != "—":
+                tool_key = f"{name} → {sf_sol}"
+                if tool_key not in seen_tools_for_account:
+                    seen_tools_for_account.add(tool_key)
+                    if tool_key not in campaign_groups:
+                        campaign_groups[tool_key] = {"category": cat, "sf_solution": sf_sol, "tool_name": name, "accounts": []}
+                    campaign_groups[tool_key]["accounts"].append(r)
+        # From job posting tools
+        for t in r.get("job_posting_tools", []):
+            sf_sol = t.get("sf_solution", "")
+            name = t.get("name", "")
+            cat = t.get("category", "")
+            if sf_sol and sf_sol != "—":
+                tool_key = f"{name} → {sf_sol}"
+                if tool_key not in seen_tools_for_account:
+                    seen_tools_for_account.add(tool_key)
+                    if tool_key not in campaign_groups:
+                        campaign_groups[tool_key] = {"category": cat, "sf_solution": sf_sol, "tool_name": name, "accounts": []}
+                    campaign_groups[tool_key]["accounts"].append(r)
+
+    if campaign_groups:
+        # Sort by number of accounts (largest campaigns first)
+        sorted_campaigns = sorted(campaign_groups.items(), key=lambda x: -len(x[1]["accounts"]))
+
+        # Filter controls
+        min_accounts = st.slider("Minimum accounts per campaign", 1, max(2, max(len(g["accounts"]) for g in campaign_groups.values())), 1, key="campaign_min")
+
+        filtered_campaigns = [(k, v) for k, v in sorted_campaigns if len(v["accounts"]) >= min_accounts]
+
+        st.markdown(f"**{len(filtered_campaigns)} campaigns** across your accounts")
+
+        for tool_key, group in filtered_campaigns:
+            acct_count = len(group["accounts"])
+            reps_involved = set(a.get("team_member", "Unassigned") for a in group["accounts"])
+            reps_str = ", ".join(sorted(r for r in reps_involved if r)) or "Unassigned"
+
+            # Determine campaign type from SF solution
+            sf_sol = group["sf_solution"]
+            # Check if any account already has Salesforce (expansion vs displacement)
+            has_sf = any("salesforce" in str(a.get("crm", "")).lower() or "expansion" in str(a.get("sf_opportunity", "")).lower() for a in group["accounts"])
+
+            if has_sf:
+                campaign_type = "🔄 Expansion"
+                campaign_color = "#15803D"
+            else:
+                campaign_type = "⚔️ Displacement"
+                campaign_color = "#B45309"
+
+            with st.expander(f"**{group['tool_name']}** → {sf_sol}  ·  {acct_count} account{'s' if acct_count > 1 else ''}  ·  {campaign_type}", expanded=False):
+                st.markdown(f"**Reps:** {reps_str}")
+                st.markdown(f"**Play:** Replace **{group['tool_name']}** ({group['category']}) with **{sf_sol}**")
+
+                # Account table within campaign
+                campaign_rows = []
+                for a in sorted(group["accounts"], key=lambda x: -x.get("score", 0)):
+                    campaign_rows.append({
+                        "Score": a.get("score", 0),
+                        "Account": a.get("name", ""),
+                        "Rep": a.get("team_member", ""),
+                        "CRM": a.get("crm", ""),
+                        "SF Opp": a.get("sf_opportunity", ""),
+                    })
+                st.dataframe(
+                    pd.DataFrame(campaign_rows),
+                    use_container_width=True,
+                    hide_index=True,
+                    column_config={
+                        "Score": st.column_config.ProgressColumn("Score", min_value=0, max_value=100, format="%d", width="small"),
+                    },
+                )
+    else:
+        st.info("No competitive tools detected yet. Run enrichment to populate campaign data.")
 
     # ── Per-Account Detail View ─────────────────────────────────────
     st.divider()

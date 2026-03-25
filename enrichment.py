@@ -1420,9 +1420,13 @@ def scan_job_postings(company_name, exa_key):
         f'"{clean_name}" job posting salesforce hubspot CRM marketing operations',
         f'"{clean_name}" hiring revenue operations sales enablement technology stack',
         f'"{clean_name}" job requirements experience tools software proficiency',
+        # Indeed/Glassdoor — catch expired/filled postings still in search index
+        f'site:indeed.com OR site:indeed.ca "{clean_name}" job requirements tools software',
+        f'site:glassdoor.com OR site:glassdoor.ca "{clean_name}" job tools technology',
     ]
 
     all_text = []  # List of (text, title, url) from all results
+    seen_urls = set()  # Deduplicate across queries
 
     for query in queries:
         try:
@@ -1432,6 +1436,12 @@ def scan_job_postings(company_name, exa_key):
                 text={"max_characters": 3000},
             )
             for r in results.results:
+                # Deduplicate by URL
+                if r.url and r.url in seen_urls:
+                    continue
+                if r.url:
+                    seen_urls.add(r.url)
+
                 text = (r.text or "").lower()
                 title = r.title or ""
                 url = r.url or ""
@@ -1449,6 +1459,34 @@ def scan_job_postings(company_name, exa_key):
                 all_text.append((text, title, url))
         except Exception as e:
             print(f"  Job posting search error: {e}")
+
+    # Wayback Machine — check archived career pages for historical job postings
+    try:
+        import urllib.request
+        import json as _json
+        wayback_url = f"https://web.archive.org/cdx/search/cdx?url={clean_name.replace(' ', '')}.com/careers*&output=json&limit=5&filter=statuscode:200&from=20250301"
+        req = urllib.request.Request(wayback_url, headers={"User-Agent": "AccountScorer/1.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            wb_data = _json.loads(resp.read().decode())
+            if len(wb_data) > 1:  # First row is headers
+                for row in wb_data[1:]:
+                    archived_url = f"https://web.archive.org/web/{row[1]}/{row[2]}"
+                    try:
+                        wb_result = exa.search_and_contents(
+                            archived_url,
+                            num_results=1,
+                            text={"max_characters": 3000},
+                        )
+                        for wr in wb_result.results:
+                            text = (wr.text or "").lower()
+                            title = wr.title or ""
+                            if text and len(text) > 100:
+                                all_text.append((text, title, archived_url))
+                                print(f"    Wayback hit: {archived_url[:80]}")
+                    except Exception:
+                        pass
+    except Exception as e:
+        print(f"  Wayback Machine lookup: {e}")
 
     if not all_text:
         return []
