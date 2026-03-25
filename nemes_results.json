@@ -1,0 +1,1319 @@
+[
+  {
+    "name": "Dealer-FX",
+    "team_member": "",
+    "aov_band": "$50k-100k",
+    "headcount": "171",
+    "website": "https://dealer-fx.com",
+    "technologies": [
+      {
+        "category": "Feature management",
+        "name": "Bootstrap"
+      },
+      {
+        "category": "CDN",
+        "name": "Cloudflare"
+      },
+      {
+        "category": "Service/Support",
+        "name": "Contact Form 7"
+      },
+      {
+        "category": "Video players",
+        "name": "FitVids.JS"
+      },
+      {
+        "category": "Analytics",
+        "name": "Google Analytics"
+      },
+      {
+        "category": "Tag Management",
+        "name": "Google Tag Manager"
+      },
+      {
+        "category": "Miscellaneous",
+        "name": "HTTP/3"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "imagesLoaded"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "Infinite Scroll"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "jQuery"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "jQuery Migrate"
+      },
+      {
+        "category": "Translation",
+        "name": "Kinsta"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "Lightbox"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "Modernizr"
+      },
+      {
+        "category": "Segmentation",
+        "name": "OneTrust"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "Packery"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "parallax.js"
+      },
+      {
+        "category": "Security",
+        "name": "reCAPTCHA"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "Swiper"
+      },
+      {
+        "category": "CMS",
+        "name": "WordPress"
+      },
+      {
+        "category": "Service/Support",
+        "name": "WPMU DEV Smush"
+      },
+      {
+        "category": "Service/Support",
+        "name": "Yoast SEO"
+      },
+      {
+        "category": "CRM",
+        "name": "HubSpot (via SPF)"
+      }
+    ],
+    "job_posting_tools": [
+      {
+        "name": "Alation",
+        "category": "Data Catalog",
+        "sf_solution": "Data Cloud (Informatica)",
+        "source_title": "Manager, Customer Experience @ Dealer-FX Group - Markham, Toronto - Auto-Jobs.ca",
+        "source_url": "https://www.auto-jobs.ca/app/en/offer/413891/manager-customer-experience/",
+        "mention_count": 1,
+        "usage_context": "Used by: Support/Service team"
+      },
+      {
+        "name": "Google Analytics",
+        "category": "Web Analytics",
+        "sf_solution": "CRM Analytics (Tableau)",
+        "source_title": "Dealer-FX | Company Profile - Revenue, Headcount, Tech Stack, Contacts",
+        "source_url": "https://bitscale.ai/directory/dealer-fx",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Infor",
+        "category": "ERP",
+        "sf_solution": "Revenue Cloud / MuleSoft integration",
+        "source_title": "Dealer-FX | Company Profile - Revenue, Headcount, Tech Stack, Contacts",
+        "source_url": "https://bitscale.ai/directory/dealer-fx",
+        "mention_count": 3,
+        "usage_context": "Used by: Sales team, Marketing team"
+      },
+      {
+        "name": "Lytics",
+        "category": "CDP",
+        "sf_solution": "Data Cloud (Data 360)",
+        "source_title": "Dealer-FX | Company Profile - Revenue, Headcount, Tech Stack, Contacts",
+        "source_url": "https://bitscale.ai/directory/dealer-fx",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Salesforce",
+        "category": "CRM",
+        "sf_solution": "\u2705 Already using",
+        "source_title": "Dealer-FX | Company Profile - Revenue, Headcount, Tech Stack, Contacts",
+        "source_url": "https://bitscale.ai/directory/dealer-fx",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Zoom",
+        "category": "Video / Collaboration",
+        "sf_solution": "Slack",
+        "source_title": "Account Executive- Automotive Software Sales job in Detroit, MI, United States at Dealer-FX Group",
+        "source_url": "https://jobs.digitalhire.com/job-listing/opening/7G1EkkFhNLlkczAdD6q9AJ",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      }
+    ],
+    "dns": {
+      "email_provider": [
+        "Google Workspace"
+      ],
+      "email_senders": [
+        "HubSpot",
+        "Zendesk",
+        "Google Workspace"
+      ]
+    },
+    "subdomains": {
+      "status": {
+        "url": "https://status.dealer-fx.com/password",
+        "platform": ""
+      }
+    },
+    "description": "# Dealer-FX (Dealer-FX Group) Dealer-FX is a Software Development company. Mindful Warriors is a supportive community offering weekly training sessions, business wellness programs, and transformative retreats. They aim to nurture the body, mind, and soul by nurturing physical training and mindfulness practices. They also offer outdoor move & connect events, boxing session, and revitalizing retreats. Mindful Warriors partners with businesses and sports teams.[/. Dealer-FX employs 171 people and h",
+    "industry": "Retail",
+    "news_items": [
+      {
+        "title": "STELLA AI Announces Partnership with Dealer-FX, Transforming ...",
+        "url": "https://www.prnewswire.com/news-releases/stella-ai-announces-partnership-with-dealer-fx-transforming-dealership-service-operations-302226413.html",
+        "date": "2024-08-20T00:00:00.000Z",
+        "summary": "20, 2024 /PRNewswire/ -- STELLA Automotive AI, the pioneer of cutting-edge AI technology that seamlessly connects customers with your dealership, is now fully integrated with Dealer-FX, a leading provider of service lane technology. The new partnership will integrate STELLA's AI-powered digital voic",
+        "events": [
+          "Major Contract/Deal",
+          "Strategic Partnership"
+        ],
+        "priority": 15
+      },
+      {
+        "title": "Dealer-FX and Carlisle & Company Team Up to Bring Revolutionary Analytical Solutions to Automotive Aftersales",
+        "url": "https://www.prnewswire.com/news-releases/dealer-fx-and-carlisle--company-team-up-to-bring-revolutionary-analytical-solutions-to-automotive-aftersales-300397823.html",
+        "date": "2017-01-27T00:00:00.000Z",
+        "summary": "# Dealer-FX and Carlisle &amp; Company Team Up to Bring Revolutionary Analytical Solutions to Automotive Aftersales Partnership will launch data-driven analytics products available exclusively on the Dealer-FX platform ## News provided by Jan 27, 2017, 05:05 ET.",
+        "events": [
+          "Major Contract/Deal",
+          "Strategic Partnership",
+          "Expansion"
+        ],
+        "priority": 6,
+        "stale": true
+      },
+      {
+        "title": "Snap-on acquires Dealer-FX",
+        "url": "https://www.dealer-fx.com/snap-on-acquires-dealer-fx/",
+        "date": "",
+        "summary": "Snap-on acquires Dealer-FX - Dealer-FX.",
+        "events": [
+          "Major Contract/Deal"
+        ],
+        "priority": 3
+      },
+      {
+        "title": "HGGC to invest in Dealer-FX",
+        "url": "https://www.hggc.com/media/hggc-strikes-deal-in-canada-for-software-provider-dealer-fx",
+        "date": "2015-07-29T00:00:00.000Z",
+        "summary": "HGGC to invest in Dealer-FX #### Jul 29, 2015 ### HGGC Strikes Deal in Canada for software provider Dealer-FX #### View Article HGGC has agreed to make an undisclosed investment in Las Vegas and Toronto-based Dealer-FX, a provider of customer experience and process automation software for auto deale",
+        "events": [
+          "Funding/IPO",
+          "Major Contract/Deal"
+        ],
+        "priority": 2,
+        "stale": true
+      }
+    ],
+    "compelling_events": [
+      "Major Contract/Deal",
+      "Strategic Partnership"
+    ],
+    "executive_changes": [],
+    "recent_news": "[Major Contract/Deal, Strategic Partnership] STELLA AI Announces Partnership with Dealer-FX, Transforming ... | [Major Contract/Deal, Strategic Partnership, Expansion] Dealer-FX and Carlisle & Company Team Up to Bring Revolutionary Analytical Solutions to Automotive Aftersales | [Major Contract/Deal] Snap-on acquires Dealer-FX",
+    "news_with_links": [
+      {
+        "text": "[Major Contract/Deal, Strategic Partnership] STELLA AI Announces Partnership with Dealer-FX, Transforming ...",
+        "url": "https://www.prnewswire.com/news-releases/stella-ai-announces-partnership-with-dealer-fx-transforming-dealership-service-operations-302226413.html",
+        "events": [
+          "Major Contract/Deal",
+          "Strategic Partnership"
+        ]
+      },
+      {
+        "text": "[Major Contract/Deal, Strategic Partnership, Expansion] Dealer-FX and Carlisle & Company Team Up to Bring Revolutionary Analytical Solutions to Automotive Aftersales",
+        "url": "https://www.prnewswire.com/news-releases/dealer-fx-and-carlisle--company-team-up-to-bring-revolutionary-analytical-solutions-to-automotive-aftersales-300397823.html",
+        "events": [
+          "Major Contract/Deal",
+          "Strategic Partnership",
+          "Expansion"
+        ]
+      },
+      {
+        "text": "[Major Contract/Deal] Snap-on acquires Dealer-FX",
+        "url": "https://www.dealer-fx.com/snap-on-acquires-dealer-fx/",
+        "events": [
+          "Major Contract/Deal"
+        ]
+      },
+      {
+        "text": "[Funding/IPO, Major Contract/Deal] HGGC to invest in Dealer-FX",
+        "url": "https://www.hggc.com/media/hggc-strikes-deal-in-canada-for-software-provider-dealer-fx",
+        "events": [
+          "Funding/IPO",
+          "Major Contract/Deal"
+        ]
+      }
+    ],
+    "executives_with_links": [
+      {
+        "text": "New hire \u2014 CEO",
+        "linkedin_url": "https://ca.linkedin.com/in/walterfrese",
+        "announcement_url": "https://canadianautodealer.ca/2020/01/dealer-fx-founder-enters-new-role-names-new-ceo/"
+      }
+    ],
+    "new_executives": "New hire \u2014 CEO",
+    "aov_multiplier": 1.05,
+    "score": 55,
+    "tech_score": 60,
+    "sf_opportunity": "Expansion",
+    "crm": "Salesforce (from job postings)",
+    "key_technologies": "HubSpot (via SPF), 3 service tools, Salesforce (job postings), Alation (job posting), Infor (job posting)",
+    "signals_summary": "tech_stack: 60; compelling_events: 50; new_executives: 0; company_size: 40; accessibility: 100",
+    "top_signals": [
+      "\ud83d\udfe2 Already on Salesforce \u2014 pitch Service Cloud (replacing support tools)",
+      "\ud83d\udd35 \"STELLA AI Announces Partnership with Dealer-FX, Transforming ...\" (2024-08-20) \u2014 new partnerships create integration needs",
+      "\ud83d\udd27 Replaceable stack: HubSpot -> Sales Cloud"
+    ],
+    "recommended_contacts": [
+      "Salesforce Admin / Architect \u2014 knows current footprint, can champion internally",
+      "VP Marketing / Marketing Ops \u2014 owns HubSpot, pitch Marketing Cloud"
+    ]
+  },
+  {
+    "name": "Lone Wolf Technologies",
+    "team_member": "",
+    "aov_band": "$50k-100k",
+    "headcount": "62",
+    "website": "https://lwolf.com",
+    "technologies": [
+      {
+        "category": "Tag Management",
+        "name": "Google Tag Manager"
+      },
+      {
+        "category": "Security",
+        "name": "HSTS"
+      },
+      {
+        "category": "Translation",
+        "name": "Vercel"
+      },
+      {
+        "category": "CRM",
+        "name": "Salesforce (via SPF)"
+      }
+    ],
+    "job_posting_tools": [
+      {
+        "name": "Azure",
+        "category": "Cloud",
+        "sf_solution": "\u2014",
+        "source_title": "Sales Enablement Lead - Lone Wolf Technologies | Built In Toronto",
+        "source_url": "https://builtintoronto.com/job/sales-enablement-lead/4310576",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Gong",
+        "category": "Conversation Intelligence",
+        "sf_solution": "Sales Cloud (Einstein Conversation Insights)",
+        "source_title": "Sales Enablement Lead - Lone Wolf Technologies | Built In Toronto",
+        "source_url": "https://builtintoronto.com/job/sales-enablement-lead/4310576",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Highspot",
+        "category": "Sales Enablement",
+        "sf_solution": "Sales Cloud (Enablement)",
+        "source_title": "Sales Enablement Lead - Lone Wolf Technologies | Built In Toronto",
+        "source_url": "https://builtintoronto.com/job/sales-enablement-lead/4310576",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Infor",
+        "category": "ERP",
+        "sf_solution": "Revenue Cloud / MuleSoft integration",
+        "source_title": "Lone Wolf Technologies - Sales Enablement Lead",
+        "source_url": "https://jobs.lever.co/lwolf/a386edec-24a9-4b99-8b63-bc905d698d4e",
+        "mention_count": 3,
+        "usage_context": "Used by: Sales team, Support/Service team"
+      },
+      {
+        "name": "Lytics",
+        "category": "CDP",
+        "sf_solution": "Data Cloud (Data 360)",
+        "source_title": "Marketing Specialist - Lone Wolf Technologies",
+        "source_url": "https://builtin.com/job/marketing-coordinator/2448989",
+        "mention_count": 2,
+        "usage_context": "Used by: Marketing team, Sales team"
+      },
+      {
+        "name": "Make",
+        "category": "Workflow Automation",
+        "sf_solution": "MuleSoft / Flow",
+        "source_title": "Marketing Operation Specialist @ Lone Wolf Technologies | Work In Tech Job Board",
+        "source_url": "https://www1.communitech.ca/companies/lone-wolf-technologies/jobs/56373908-marketing-operation-specialist",
+        "mention_count": 4,
+        "usage_context": "Used by: Marketing team"
+      },
+      {
+        "name": "Marketo",
+        "category": "Marketing Automation",
+        "sf_solution": "Marketing Cloud Account Engagement",
+        "source_title": "Marketing Operation Specialist @ Lone Wolf Technologies | Work In Tech Job Board",
+        "source_url": "https://www1.communitech.ca/companies/lone-wolf-technologies/jobs/56373908-marketing-operation-specialist",
+        "mention_count": 1,
+        "usage_context": "Used by: Marketing team"
+      },
+      {
+        "name": "Microsoft Teams",
+        "category": "Collaboration",
+        "sf_solution": "Slack",
+        "source_title": "Senior Ruby Developer at Lone Wolf Technologies 566492",
+        "source_url": "https://www.talentify.io/job/senior-ruby-developer---lone-wolf-technologies-566492",
+        "mention_count": 1,
+        "usage_context": "Used by: IT/Engineering"
+      },
+      {
+        "name": "Paycom",
+        "category": "HCM / Payroll",
+        "sf_solution": "Employee Service",
+        "source_title": "Senior Ruby Developer at Lone Wolf Technologies 566492",
+        "source_url": "https://www.talentify.io/job/senior-ruby-developer---lone-wolf-technologies-566492",
+        "mention_count": 1,
+        "usage_context": "Used by: IT/Engineering"
+      },
+      {
+        "name": "Qualified",
+        "category": "Conversational Marketing",
+        "sf_solution": "\u2705 Already using (SF Native)",
+        "source_title": "Marketing Specialist - Lone Wolf Technologies",
+        "source_url": "https://builtin.com/job/marketing-coordinator/2448989",
+        "mention_count": 1,
+        "usage_context": "Used by: Marketing team"
+      },
+      {
+        "name": "Salesforce",
+        "category": "CRM",
+        "sf_solution": "\u2705 Already using",
+        "source_title": "Lone Wolf Technologies - Sales Enablement Lead",
+        "source_url": "https://jobs.lever.co/lwolf/a386edec-24a9-4b99-8b63-bc905d698d4e",
+        "mention_count": 3,
+        "usage_context": "Used by: Sales team, Marketing team"
+      }
+    ],
+    "dns": {
+      "email_provider": [
+        "Mimecast"
+      ],
+      "email_senders": [
+        "Salesforce",
+        "SendGrid",
+        "Microsoft 365"
+      ]
+    },
+    "subdomains": {
+      "support": {
+        "url": "https://support.lwolf.com/s/",
+        "platform": ""
+      },
+      "community": {
+        "url": "https://community.lwolf.com/s/",
+        "platform": ""
+      }
+    },
+    "description": "# Lone Wolf Technologies Lone Wolf Technologies is a IT Services and IT Consulting company. hyatt hotels and resorts is a company that provides hotel reservations and booking services. They offer a loyalty program and credit cards for hotel rooms. The company also provides services for meetings and events. Lone Wolf Technologies employs 62 people (+75.4% YoY, +49 people). Headquartered in Dover, Delaware, United States, with presence in India, Canada, and Colombia.",
+    "industry": "Technology",
+    "news_items": [
+      {
+        "title": "News and press - Lone Wolf Technologies",
+        "url": "https://lwolf.com/news-press",
+        "date": "",
+        "summary": "See how you can save up to 20% on your tech. Get started now # News and press Explore the latest insights and announcements from Lone Wolf Technologies to help you lead and succeed in the world of real estate.",
+        "events": [
+          "Major Contract/Deal",
+          "Strategic Partnership",
+          "Expansion"
+        ],
+        "priority": 16
+      },
+      {
+        "title": "Earnnest Expands Partnership with Lone Wolf Technologies, Launching Full Integration with TransactionDesk",
+        "url": "https://www.lwolf.com/press-releases/earnnest-expands-partnership-with-lone-wolf-technologies-launching-full-integration-with-transactions-transactiondesk-edition",
+        "date": "2026-01-19T00:00:00.000Z",
+        "summary": "Earnnest Expands Partnership with Lone Wolf Technologies, Launching Full Integration with TransactionDeskSkip to main See how you can save up to 20% on your tech. Get started now See all Press Releases # Earnnest Expands Partnership with Lone Wolf Technologies, Launching Full Integration with Transa",
+        "events": [
+          "Strategic Partnership",
+          "Expansion"
+        ],
+        "priority": 13
+      },
+      {
+        "title": "Lone Wolf Technologies Announces Powerful Integration, Unifying the Real Estate Journey from Lead to Close",
+        "url": "https://www.globenewswire.com/news-release/2025/10/29/3176537/0/en/Lone-Wolf-Technologies-Announces-Powerful-Integration-Unifying-the-Real-Estate-Journey-from-Lead-to-Close.html",
+        "date": "2025-10-29T00:00:00.000Z",
+        "summary": "Lone Wolf Technologies Announces Powerful Integration, -- # Lone Wolf Technologies Announces Powerful Integration, Unifying the Real Estate Journey from Lead to Close October 29, 2025 09:15 ET | Source: Lone Wolf Technologies Follow Lone Wolf Technologies DALLAS, Oct. 29, 2025 (GLOBE NEWSWIRE) -- Lo",
+        "events": [
+          "Strategic Partnership"
+        ],
+        "priority": 7
+      },
+      {
+        "title": "Earnnest, Lone Wolf expand partnership - Housing Wire",
+        "url": "https://www.housingwire.com/articles/earnnest-lone-wolf-expand-partnership/",
+        "date": "2025-08-14T00:00:00.000Z",
+        "summary": "Earnnest, Lone Wolf expand partnership -- // Dispatch the pianoUidDetected event with a test UID document. addEventListener('DOMContentLoaded', function() ); document.",
+        "events": [
+          "Strategic Partnership"
+        ],
+        "priority": 7
+      },
+      {
+        "title": "Lone Wolf Technologies and FMLS Announce Five-Year Strategic ...",
+        "url": "https://www.prnewswire.com/news-releases/lone-wolf-technologies-and-fmls-announce-five-year-strategic-partnership-to-transform-transaction-management-for-over-60-000-members-302416292.html",
+        "date": "2025-03-31T00:00:00.000Z",
+        "summary": "DALLAS, March 31, 2025 /PRNewswire/ -- Lone Wolf Technologies (\"Lone Wolf\"), the leader in residential real estate software, and the longest-standing technology company in the real estate industry, today announced a five-year partnership with First Multiple Listing Service (FMLS) to provide its over",
+        "events": [
+          "Strategic Partnership"
+        ],
+        "priority": 7
+      }
+    ],
+    "compelling_events": [
+      "Expansion",
+      "Major Contract/Deal",
+      "Strategic Partnership"
+    ],
+    "executive_changes": [
+      {
+        "title": "CEO",
+        "person_name": "Matt Fischer",
+        "headline": "Lone Wolf Technologies appoints Matt Fischer as CEO - HousingWire",
+        "context": "Lone Wolf Technologies appoints Matt Fischer as CEO -- // Dispatch the pianoUidDetected event with a test UID document.addEventListener('DOMContentLoaded', function() { const uid_event = new CustomEvent(\"pianoUidDetected\", { detail: \"5563a9ee-232c-42",
+        "announcement_url": "https://www.housingwire.com/articles/lone-wolf-new-ceo-fischer/",
+        "date": "2026-02-18T00:00:00.000Z",
+        "linkedin_url": "https://linkedin.com/in/nick-wood-932847164"
+      }
+    ],
+    "recent_news": "[Major Contract/Deal, Strategic Partnership, Expansion] News and press - Lone Wolf Technologies | [Strategic Partnership, Expansion] Earnnest Expands Partnership with Lone Wolf Technologies, Launching Full Integration with TransactionDesk | [Strategic Partnership] Lone Wolf Technologies Announces Powerful Integration, Unifying the Real Estate Journey from Lead to Close",
+    "news_with_links": [
+      {
+        "text": "[Major Contract/Deal, Strategic Partnership, Expansion] News and press - Lone Wolf Technologies",
+        "url": "https://lwolf.com/news-press",
+        "events": [
+          "Major Contract/Deal",
+          "Strategic Partnership",
+          "Expansion"
+        ]
+      },
+      {
+        "text": "[Strategic Partnership, Expansion] Earnnest Expands Partnership with Lone Wolf Technologies, Launching Full Integration with TransactionDesk",
+        "url": "https://www.lwolf.com/press-releases/earnnest-expands-partnership-with-lone-wolf-technologies-launching-full-integration-with-transactions-transactiondesk-edition",
+        "events": [
+          "Strategic Partnership",
+          "Expansion"
+        ]
+      },
+      {
+        "text": "[Strategic Partnership] Lone Wolf Technologies Announces Powerful Integration, Unifying the Real Estate Journey from Lead to Close",
+        "url": "https://www.globenewswire.com/news-release/2025/10/29/3176537/0/en/Lone-Wolf-Technologies-Announces-Powerful-Integration-Unifying-the-Real-Estate-Journey-from-Lead-to-Close.html",
+        "events": [
+          "Strategic Partnership"
+        ]
+      },
+      {
+        "text": "[Strategic Partnership] Earnnest, Lone Wolf expand partnership - Housing Wire",
+        "url": "https://www.housingwire.com/articles/earnnest-lone-wolf-expand-partnership/",
+        "events": [
+          "Strategic Partnership"
+        ]
+      },
+      {
+        "text": "[Strategic Partnership] Lone Wolf Technologies and FMLS Announce Five-Year Strategic ...",
+        "url": "https://www.prnewswire.com/news-releases/lone-wolf-technologies-and-fmls-announce-five-year-strategic-partnership-to-transform-transaction-management-for-over-60-000-members-302416292.html",
+        "events": [
+          "Strategic Partnership"
+        ]
+      }
+    ],
+    "executives_with_links": [
+      {
+        "text": "Matt Fischer \u2014 CEO",
+        "linkedin_url": "https://linkedin.com/in/nick-wood-932847164",
+        "announcement_url": "https://www.housingwire.com/articles/lone-wolf-new-ceo-fischer/"
+      },
+      {
+        "text": "New hire \u2014 Chief Technology",
+        "linkedin_url": "https://www.linkedin.com/in/sean-wheeler-9007631",
+        "announcement_url": "https://www.housingwire.com/articles/29339-lone-wolf-names-new-chief-technology-officer/"
+      }
+    ],
+    "new_executives": "Matt Fischer \u2014 CEO | New hire \u2014 Chief Technology",
+    "aov_multiplier": 1.05,
+    "score": 65,
+    "tech_score": 60,
+    "sf_opportunity": "Expansion",
+    "crm": "Salesforce",
+    "key_technologies": "Salesforce (existing), Gong (job posting), Highspot (job posting), Infor (job posting)",
+    "signals_summary": "tech_stack: 60; compelling_events: 75; new_executives: 30; company_size: 40; accessibility: 100",
+    "top_signals": [
+      "\ud83d\udfe2 Already on Salesforce \u2014 pitch Marketing Cloud",
+      "\ud83d\udc54 New CEO: Matt Fischer (2026-02-18) \u2014 new leaders review vendors in first 90 days [LinkedIn](https://linkedin.com/in/nick-wood-932847164)",
+      "\ud83d\udfe3 \"News and press - Lone Wolf Technologies\" \u2014 scaling operations \u2014 ask how their tools are keeping up"
+    ],
+    "recommended_contacts": [
+      "\ud83d\udccc Matt Fischer, CEO [LinkedIn](https://linkedin.com/in/nick-wood-932847164) \u2014 recently appointed, likely reviewing vendors",
+      "Salesforce Admin / Architect \u2014 knows current footprint, can champion internally",
+      "VP Marketing / Marketing Ops \u2014 owns Marketo, pitch Marketing Cloud"
+    ]
+  },
+  {
+    "name": "360insights",
+    "team_member": "",
+    "aov_band": "$100k-200k",
+    "headcount": "497",
+    "website": "https://360insights.com",
+    "technologies": [
+      {
+        "category": "CDN",
+        "name": "cdnjs"
+      },
+      {
+        "category": "CDN",
+        "name": "Cloudflare"
+      },
+      {
+        "category": "Analytics",
+        "name": "Google Analytics"
+      },
+      {
+        "category": "Tag Management",
+        "name": "Google Tag Manager"
+      },
+      {
+        "category": "Security",
+        "name": "HSTS"
+      },
+      {
+        "category": "Miscellaneous",
+        "name": "HTTP/3"
+      },
+      {
+        "category": "CMS",
+        "name": "HubSpot CMS Hub"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "jQuery"
+      },
+      {
+        "category": "Advertising",
+        "name": "Linkedin Ads"
+      },
+      {
+        "category": "CRM",
+        "name": "HubSpot"
+      },
+      {
+        "category": "Sales Tools",
+        "name": "SalesLoft"
+      }
+    ],
+    "job_posting_tools": [
+      {
+        "name": "Alation",
+        "category": "Data Catalog",
+        "sf_solution": "Data Cloud (Informatica)",
+        "source_title": "Incentives Marketing Operations Professional Job Opening in Whitby, Ontario at 360insights | Salary.com",
+        "source_url": "https://www.career.com/ca-job/360insights/incentives-marketing-operations-professional/j202404060450245095329",
+        "mention_count": 1,
+        "usage_context": "Used by: Marketing team"
+      },
+      {
+        "name": "Catalyst",
+        "category": "Customer Success",
+        "sf_solution": "Service Cloud + Data Cloud",
+        "source_title": "360Insights",
+        "source_url": "https://www.360insights.com/",
+        "mention_count": 1,
+        "usage_context": "Used by: Marketing team"
+      },
+      {
+        "name": "Drift",
+        "category": "Conversational Marketing",
+        "sf_solution": "Service Cloud (Einstein Bots)",
+        "source_title": "Marketing Operations Analyst at 360Insights | ThatStartupJob",
+        "source_url": "https://www.thatstartupjob.com/job/682c6b1a41318a9562e6738c/Marketing-Operations-Analyst",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Google Analytics",
+        "category": "Web Analytics",
+        "sf_solution": "CRM Analytics (Tableau)",
+        "source_title": "360insights | Company Profile - Revenue, Headcount, Tech Stack, Contacts",
+        "source_url": "https://bitscale.ai/directory/360insights",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "HubSpot",
+        "category": "Marketing Automation",
+        "sf_solution": "Marketing Cloud Account Engagement",
+        "source_title": "Marketing Operations Analyst at 360Insights | ThatStartupJob",
+        "source_url": "https://www.thatstartupjob.com/job/682c6b1a41318a9562e6738c/Marketing-Operations-Analyst",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Infor",
+        "category": "ERP",
+        "sf_solution": "Revenue Cloud / MuleSoft integration",
+        "source_title": "Marketing Operations Analyst at 360Insights | ThatStartupJob",
+        "source_url": "https://www.thatstartupjob.com/job/682c6b1a41318a9562e6738c/Marketing-Operations-Analyst",
+        "mention_count": 4,
+        "usage_context": "Used by: Sales team, Marketing team"
+      },
+      {
+        "name": "Lytics",
+        "category": "CDP",
+        "sf_solution": "Data Cloud (Data 360)",
+        "source_title": "Marketing Operations Analyst at 360Insights | ThatStartupJob",
+        "source_url": "https://www.thatstartupjob.com/job/682c6b1a41318a9562e6738c/Marketing-Operations-Analyst",
+        "mention_count": 5,
+        "usage_context": "Used by: Sales team, Marketing team"
+      },
+      {
+        "name": "SalesLoft",
+        "category": "Sales Engagement",
+        "sf_solution": "Sales Cloud (Sales Engagement)",
+        "source_title": "Marketing Operations Analyst at 360Insights | ThatStartupJob",
+        "source_url": "https://www.thatstartupjob.com/job/682c6b1a41318a9562e6738c/Marketing-Operations-Analyst",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Salesforce",
+        "category": "CRM",
+        "sf_solution": "\u2705 Already using",
+        "source_title": "Marketing Operations Analyst at 360Insights | ThatStartupJob",
+        "source_url": "https://www.thatstartupjob.com/job/682c6b1a41318a9562e6738c/Marketing-Operations-Analyst",
+        "mention_count": 2,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Spiff",
+        "category": "SPM / Commissions",
+        "sf_solution": "Sales Cloud (SPM)",
+        "source_title": "Incentives Marketing Operations Professional Job Opening in Whitby, Ontario at 360insights | Salary.com",
+        "source_url": "https://www.career.com/ca-job/360insights/incentives-marketing-operations-professional/j202404060450245095329",
+        "mention_count": 1,
+        "usage_context": "Used by: Marketing team"
+      },
+      {
+        "name": "ZoomInfo",
+        "category": "Data Enrichment",
+        "sf_solution": "Data Cloud",
+        "source_title": "Marketing Operations Analyst at 360Insights | ThatStartupJob",
+        "source_url": "https://www.thatstartupjob.com/job/682c6b1a41318a9562e6738c/Marketing-Operations-Analyst",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      }
+    ],
+    "dns": {
+      "email_provider": [
+        "Microsoft 365"
+      ],
+      "email_senders": []
+    },
+    "subdomains": {},
+    "description": "# 360insights (360incentives.com Canada Inc.) 360insights is a IT Services and IT Consulting company. 360insights delivers channel incentive software and services to help brands engage their partners and create value for their customers. 360insights employs 497 people (-3.8% YoY, -27 people) and has an annual revenue of $112.0M. Headquartered in Whitby, Ontario, Canada, operates in 11 countries (including United States, United Kingdom, Guatemala, Haiti, and France). Has $47.6M in total funding, ",
+    "industry": "Software",
+    "news_items": [
+      {
+        "title": "360insights Announces Acquisition of CR Worldwide",
+        "url": "https://www.360insights.com/blog/360insights-announces-acquisition-of-cr-worldwide",
+        "date": "",
+        "summary": "360insights Announces Acquisition of CR Worldwide # 360insights Announces Acquisition of CR Worldwide The Channel Incentives Management (CIM) Leader Expands Global Reach and Capabilities with CR Worldwide Purchase. 1, 2020) \u2013 360insights the creator of the Channel Success Platform announced the acqu",
+        "events": [
+          "M&A Activity",
+          "Expansion"
+        ],
+        "priority": 11
+      },
+      {
+        "title": "360insights' CIM Charge Continues with the Acquisition of Perks WW",
+        "url": "https://www.360insights.com/blog/360insights-cim-charge-continues-with-the-acquisition-of-perks-ww",
+        "date": "",
+        "summary": "360insights\u2019 CIM Charge Continues with the Acquisition of Perks WW # 360insights\u2019 CIM Charge Continues with the Acquisition of Perks WW 360insights Announces Acquisition of Perks WW - the Sixth Acquisition in Three Years \u2013 Significantly Boosting its Reach, Capabilities and Global Leadership TORONTO ",
+        "events": [
+          "M&A Activity"
+        ],
+        "priority": 5
+      },
+      {
+        "title": "360insights Completes Acquisition of HMI Performance Incentives\u2122",
+        "url": "https://www.prweb.com/releases/360insights-completes-acquisition-of-hmi-performance-incentives-302029041.html",
+        "date": "2024-01-09T00:00:00.000Z",
+        "summary": "Purchase marks the commitment of both companies to serving a best-in-class experience to clients. 9, 2024 /PRNewswire-PRWeb/ -- 360insights, a global leader in channel incentives and ecosystem management, has acquired HMI Performance Incentives, a renowned provider of strategic performance improveme",
+        "events": [
+          "M&A Activity",
+          "Funding/IPO"
+        ],
+        "priority": 4,
+        "stale": true
+      },
+      {
+        "title": "360insights\u00ae Completes Acquisition of Webinfinity\u2122 | Financial Post",
+        "url": "https://financialpost.com/pmn/press-releases-pmn/business-wire-news-releases-pmn/360insights-completes-acquisition-of-webinfinity",
+        "date": "2022-03-14T00:00:00.000Z",
+        "summary": "360insights\u00ae Completes Acquisition of Webinfinity\u2122 | Financial Post This section is by Business Wire Purchase Makes Way for Launch of 360ecosystems\u2122 \u2013 The Culmination of 360insights\u2019 Multi-Year Vision to Bring Together the Best Channel Engagement and Business Optimization Companies and Technologies ",
+        "events": [
+          "M&A Activity",
+          "Expansion"
+        ],
+        "priority": 1,
+        "stale": true
+      },
+      {
+        "title": "CIBC Innovation Banking Serves as Lead Arranger of a Syndicated Debt Facility for 360insights",
+        "url": "https://www.businesswire.com/news/home/20240910550562/en/CIBC-Innovation-Banking-Serves-as-Lead-Arranger-of-a-Syndicated-Debt-Facility-for-360insights",
+        "date": "2024-09-10T00:00:00.000Z",
+        "summary": "CIBC Innovation Banking Serves as Lead Arranger of a Syndicated Debt Facility for 360insights Sep 10, 2024 9:00 AM Eastern Daylight Time # CIBC Innovation Banking Serves as Lead Arranger of a Syndicated Debt Facility for 360insights TORONTO--(BUSINESS WIRE)--CIBC Innovation Banking announced today t",
+        "events": [],
+        "priority": 0
+      }
+    ],
+    "compelling_events": [
+      "Expansion",
+      "M&A Activity"
+    ],
+    "executive_changes": [],
+    "recent_news": "[M&A Activity, Expansion] 360insights Announces Acquisition of CR Worldwide | [M&A Activity] 360insights' CIM Charge Continues with the Acquisition of Perks WW | [M&A Activity, Funding/IPO] 360insights Completes Acquisition of HMI Performance Incentives\u2122",
+    "news_with_links": [
+      {
+        "text": "[M&A Activity, Expansion] 360insights Announces Acquisition of CR Worldwide",
+        "url": "https://www.360insights.com/blog/360insights-announces-acquisition-of-cr-worldwide",
+        "events": [
+          "M&A Activity",
+          "Expansion"
+        ]
+      },
+      {
+        "text": "[M&A Activity] 360insights' CIM Charge Continues with the Acquisition of Perks WW",
+        "url": "https://www.360insights.com/blog/360insights-cim-charge-continues-with-the-acquisition-of-perks-ww",
+        "events": [
+          "M&A Activity"
+        ]
+      },
+      {
+        "text": "[M&A Activity, Funding/IPO] 360insights Completes Acquisition of HMI Performance Incentives\u2122",
+        "url": "https://www.prweb.com/releases/360insights-completes-acquisition-of-hmi-performance-incentives-302029041.html",
+        "events": [
+          "M&A Activity",
+          "Funding/IPO"
+        ]
+      },
+      {
+        "text": "[M&A Activity, Expansion] 360insights\u00ae Completes Acquisition of Webinfinity\u2122 | Financial Post",
+        "url": "https://financialpost.com/pmn/press-releases-pmn/business-wire-news-releases-pmn/360insights-completes-acquisition-of-webinfinity",
+        "events": [
+          "M&A Activity",
+          "Expansion"
+        ]
+      },
+      {
+        "text": "CIBC Innovation Banking Serves as Lead Arranger of a Syndicated Debt Facility for 360insights",
+        "url": "https://www.businesswire.com/news/home/20240910550562/en/CIBC-Innovation-Banking-Serves-as-Lead-Arranger-of-a-Syndicated-Debt-Facility-for-360insights",
+        "events": []
+      }
+    ],
+    "new_executives": "",
+    "aov_multiplier": 1.1,
+    "score": 59,
+    "tech_score": 60,
+    "sf_opportunity": "Expansion",
+    "crm": "Salesforce (from job postings)",
+    "key_technologies": "HubSpot, Salesforce (job postings), Alation (job posting), Catalyst (job posting), Drift (job posting)",
+    "signals_summary": "tech_stack: 60; compelling_events: 50; new_executives: 0; company_size: 60; accessibility: 100",
+    "top_signals": [
+      "\ud83d\udfe2 Already on Salesforce \u2014 pitch Marketing Cloud",
+      "\ud83d\udd34 \"360insights Announces Acquisition of CR Worldwide\" \u2014 new leadership will revisit tech stack \u2014 ask about integration plans",
+      "\ud83d\udfe3 \"360insights Announces Acquisition of CR Worldwide\" \u2014 scaling operations \u2014 ask how their tools are keeping up"
+    ],
+    "recommended_contacts": [
+      "Salesforce Admin / Architect \u2014 knows current footprint, can champion internally",
+      "VP Marketing / Marketing Ops \u2014 owns HubSpot, pitch Marketing Cloud"
+    ]
+  },
+  {
+    "name": "TEN Canada",
+    "team_member": "",
+    "aov_band": "$10k-50k",
+    "headcount": "113",
+    "website": "https://tencanada.com",
+    "technologies": [
+      {
+        "category": "CDN",
+        "name": "Cloudflare"
+      },
+      {
+        "category": "Tag Management",
+        "name": "Google Tag Manager"
+      },
+      {
+        "category": "Miscellaneous",
+        "name": "HTTP/3"
+      },
+      {
+        "category": "Caching",
+        "name": "NitroPack"
+      },
+      {
+        "category": "CMS",
+        "name": "WordPress"
+      },
+      {
+        "category": "Translation",
+        "name": "WP Engine"
+      }
+    ],
+    "job_posting_tools": [
+      {
+        "name": "Apollo",
+        "category": "Prospecting",
+        "sf_solution": "Sales Cloud (Sales Engagement)",
+        "source_title": "Sales Operations Specialist - Salesforce & HubSpot (Remote Canada) at Brafton | Torre",
+        "source_url": "https://torre.ai/post/VWM8XXMr-brafton-sales-operations-specialist-salesforce-hubspot-remote-canada%3Ft%3D1763164800060%26r%3DwEpwkEXe",
+        "mention_count": 2,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Atlan",
+        "category": "Data Governance",
+        "sf_solution": "Data Cloud (Informatica)",
+        "source_title": "Account Manager \u2013 TEN Canada (Transportation Equipment Network) \u2013 Job Moncton, NB",
+        "source_url": "https://ca.talent.com/view?id=608252351352221308",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Clearbit",
+        "category": "Data Enrichment",
+        "sf_solution": "Data Cloud",
+        "source_title": "Sales Operations Specialist - Salesforce & HubSpot (Remote Canada) at Brafton | Torre",
+        "source_url": "https://torre.ai/post/VWM8XXMr-brafton-sales-operations-specialist-salesforce-hubspot-remote-canada%3Ft%3D1763164800060%26r%3DwEpwkEXe",
+        "mention_count": 2,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "HubSpot",
+        "category": "Marketing Automation",
+        "sf_solution": "Marketing Cloud Account Engagement",
+        "source_title": "Sales Operations Specialist - Salesforce & HubSpot (Remote Canada) at Brafton | Torre",
+        "source_url": "https://torre.ai/post/VWM8XXMr-brafton-sales-operations-specialist-salesforce-hubspot-remote-canada%3Ft%3D1763164800060%26r%3DwEpwkEXe",
+        "mention_count": 3,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Outreach",
+        "category": "Sales Engagement",
+        "sf_solution": "Sales Cloud (Sales Engagement)",
+        "source_title": "Account Manager \u2013 TEN Canada (Transportation Equipment Network) \u2013 Job Moncton, NB",
+        "source_url": "https://ca.talent.com/view?id=608252351352221308",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Plan A",
+        "category": "Sustainability",
+        "sf_solution": "Net Zero Cloud",
+        "source_title": "Operations Coordinator \u2013 TEN Canada (Transportation Equipment Network) \u2013 Job Winnipeg, MB",
+        "source_url": "https://ca.talent.com/view?id=e0a35d1f8032",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Salesforce",
+        "category": "CRM",
+        "sf_solution": "\u2705 Already using",
+        "source_title": "Account Manager \u2013 TEN Canada (Transportation Equipment Network) \u2013 Job Moncton, NB",
+        "source_url": "https://ca.talent.com/view?id=608252351352221308",
+        "mention_count": 4,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "Spanning",
+        "category": "SaaS Backup",
+        "sf_solution": "Salesforce Backup (Own)",
+        "source_title": "%DOC_TITLE%TEN Canada (Transportation Equipment Network)",
+        "source_url": "https://ten-canada.breezy.hr/",
+        "mention_count": 1,
+        "usage_context": "Used by: IT/Engineering"
+      },
+      {
+        "name": "Zapier",
+        "category": "Workflow Automation",
+        "sf_solution": "MuleSoft / Flow",
+        "source_title": "Sales Operations Specialist - Salesforce & HubSpot (Remote Canada) - Brafton Inc. | Built In Toronto",
+        "source_url": "https://builtintoronto.com/job/sales-operations-specialist-salesforce-hubspot-remote-canada/7119098",
+        "mention_count": 1,
+        "usage_context": "Used by: Sales team"
+      },
+      {
+        "name": "ZoomInfo",
+        "category": "Data Enrichment",
+        "sf_solution": "Data Cloud",
+        "source_title": "Sales Operations Specialist - Salesforce & HubSpot (Remote Canada) at Brafton | Torre",
+        "source_url": "https://torre.ai/post/VWM8XXMr-brafton-sales-operations-specialist-salesforce-hubspot-remote-canada%3Ft%3D1763164800060%26r%3DwEpwkEXe",
+        "mention_count": 2,
+        "usage_context": "Used by: Sales team"
+      }
+    ],
+    "dns": {
+      "email_provider": [],
+      "email_senders": []
+    },
+    "subdomains": {},
+    "description": "TEN Canada is a Truck Transportation company. TEN Canada is a company that provides semi-trailer leasing, rental, and repair solutions. They have 13 locations and 24/7 ERS, offering a wide range of trailers for transportation, equipment, and fleet consultation services. TEN Canada employs 113 people (-6.1% YoY, -11 people) and has an annual revenue of $456.6M, founded in 1963. Headquartered in Mississauga, Ontario, Canada.",
+    "industry": "Transportation",
+    "news_items": [
+      {
+        "title": "TIP Canada Joins TEN | Expanding Trailer Leasing Network - TEN",
+        "url": "https://tenleasing.com/en-ca/news-en-ca/tip-canada-joins-transportation-equipment-network-ten/",
+        "date": "2024-09-25T00:00:00.000Z",
+        "summary": "TIP Canada Joins TEN | Expanding Trailer Leasing Network - TEN - Press Releases # TIP Canada joins Transportation Equipment Network (TEN) Founding Creative Amsterdam, 15 April 2024. Today, I Squared Capital, the owner of both TIP Group and Transportation Equipment Network (formerly Star Leasing grou",
+        "events": [
+          "Major Contract/Deal"
+        ],
+        "priority": 8
+      },
+      {
+        "title": "TEN Announces $50 Million Enterprise Lease Agreement with USA Truck to Support Continued Growth and Expansion - TEN",
+        "url": "https://tenleasing.com/en-ca/news/ten-announces-50-million-enterprise-lease-agreement-with-usa-truck-to-support-continued-growth-and-expansion/",
+        "date": "2026-01-14T00:00:00.000Z",
+        "summary": "TEN Announces $50 Million Enterprise Lease Agreement with USA Truck to Support Continued Growth and Expansion - TEN - Press Releases # TEN Announces $50 Million Enterprise Lease Agreement with USA Truck to Support Continued Growth and Expansion DUBLIN, Ohio \u2013 January 14, 2026 \u2013 TEN (Transportation E",
+        "events": [
+          "Expansion"
+        ],
+        "priority": 6
+      },
+      {
+        "title": "TIP Group Canada Becomes TEN (Transportation Equipment Network), Marking a New Era in Trailer Solutions",
+        "url": "https://www.newswire.ca/news-releases/tip-group-canada-becomes-ten-transportation-equipment-network-marking-a-new-era-in-trailer-solutions-834533833.html",
+        "date": "2024-10-01T00:00:00.000Z",
+        "summary": "1, 2024 /CNW/ - TIP Group-Canada, a portfolio company of I Squared Capital, announced the completion of their name change to TEN (Transportation Equipment Network). This transition, which follows the April 2024 transaction announcement and the June 2024 transaction closure, marks a significant miles",
+        "events": [],
+        "priority": 0
+      },
+      {
+        "title": "TIP Group Canada changes name to TEN - Truck News",
+        "url": "https://www.trucknews.com/business-management/tip-group-canada-changes-name-to-ten/1003189730/",
+        "date": "2024-10-01T00:00:00.000Z",
+        "summary": "TIP Group Canada changes name to TEN - Truck News by trucknews. com October 1, 2024 TIP Group Canada, a portfolio company of I Squared Capital, announced the completion of their name change to TEN (Transportation Equipment Network).",
+        "events": [],
+        "priority": 0
+      }
+    ],
+    "compelling_events": [
+      "Expansion",
+      "Major Contract/Deal"
+    ],
+    "executive_changes": [
+      {
+        "title": "CEO",
+        "person_name": "Brett Johnson",
+        "headline": "Trucking Announcements: New CEOs at TEN, Optronics; Decisiv ...",
+        "context": "Trucking Announcements: New CEOs at TEN, Optronics; Decisiv names CPO - Truck News by Krystyna Shchedrina November 17, 2025 Each week, trucknews.com lists notable events, promotions and awards in the trucking industry. This week, Ron and Mike Skelton",
+        "announcement_url": "https://www.trucknews.com/transportation/trucking-announcements-new-ceos-at-ten-optronics-decisiv-names-cpo/1003204438/",
+        "date": "2025-11-17T00:00:00.000Z",
+        "linkedin_url": "https://linkedin.com/in/brett-johnson-13a5a725"
+      }
+    ],
+    "recent_news": "[Major Contract/Deal] TIP Canada Joins TEN | Expanding Trailer Leasing Network - TEN | [Expansion] TEN Announces $50 Million Enterprise Lease Agreement with USA Truck to Support Continued Growth and Expansion - TEN | TIP Group Canada Becomes TEN (Transportation Equipment Network), Marking a New Era in Trailer Solutions",
+    "news_with_links": [
+      {
+        "text": "[Major Contract/Deal] TIP Canada Joins TEN | Expanding Trailer Leasing Network - TEN",
+        "url": "https://tenleasing.com/en-ca/news-en-ca/tip-canada-joins-transportation-equipment-network-ten/",
+        "events": [
+          "Major Contract/Deal"
+        ]
+      },
+      {
+        "text": "[Expansion] TEN Announces $50 Million Enterprise Lease Agreement with USA Truck to Support Continued Growth and Expansion - TEN",
+        "url": "https://tenleasing.com/en-ca/news/ten-announces-50-million-enterprise-lease-agreement-with-usa-truck-to-support-continued-growth-and-expansion/",
+        "events": [
+          "Expansion"
+        ]
+      },
+      {
+        "text": "TIP Group Canada Becomes TEN (Transportation Equipment Network), Marking a New Era in Trailer Solutions",
+        "url": "https://www.newswire.ca/news-releases/tip-group-canada-becomes-ten-transportation-equipment-network-marking-a-new-era-in-trailer-solutions-834533833.html",
+        "events": []
+      },
+      {
+        "text": "TIP Group Canada changes name to TEN - Truck News",
+        "url": "https://www.trucknews.com/business-management/tip-group-canada-changes-name-to-ten/1003189730/",
+        "events": []
+      }
+    ],
+    "executives_with_links": [
+      {
+        "text": "Brett Johnson \u2014 CEO",
+        "linkedin_url": "https://linkedin.com/in/brett-johnson-13a5a725",
+        "announcement_url": "https://www.trucknews.com/transportation/trucking-announcements-new-ceos-at-ten-optronics-decisiv-names-cpo/1003204438/"
+      },
+      {
+        "text": "New hire \u2014 CRO",
+        "linkedin_url": "https://linkedin.com/in/peter-daneyko-79956b",
+        "announcement_url": "https://tenleasing.com/en-ca/news-en-ca/ten-appoints-lisa-redfearn-as-vice-president-sales-canada/"
+      }
+    ],
+    "new_executives": "Brett Johnson \u2014 CEO | New hire \u2014 CRO",
+    "aov_multiplier": 1.0,
+    "score": 56,
+    "tech_score": 60,
+    "sf_opportunity": "Expansion",
+    "crm": "Salesforce (from job postings)",
+    "key_technologies": "Salesforce (job postings), Apollo (job posting), Atlan (job posting), Clearbit (job posting)",
+    "signals_summary": "tech_stack: 60; compelling_events: 50; new_executives: 30; company_size: 40; accessibility: 100",
+    "top_signals": [
+      "\ud83d\udfe2 Already on Salesforce \u2014 pitch Marketing Cloud",
+      "\ud83d\udc54 New CEO: Brett Johnson (2025-11-17) \u2014 new leaders review vendors in first 90 days [LinkedIn](https://linkedin.com/in/brett-johnson-13a5a725)",
+      "\ud83d\udfe3 \"TEN Announces $50 Million Enterprise Lease Agreement with USA Truck to Support C\" (2026-01-14) \u2014 scaling operations \u2014 ask how their tools are keeping up"
+    ],
+    "recommended_contacts": [
+      "\ud83d\udccc Brett Johnson, CEO [LinkedIn](https://linkedin.com/in/brett-johnson-13a5a725) \u2014 recently appointed, likely reviewing vendors",
+      "Salesforce Admin / Architect \u2014 knows current footprint, can champion internally",
+      "VP Marketing / Marketing Ops \u2014 owns HubSpot, pitch Marketing Cloud"
+    ]
+  },
+  {
+    "name": "Delta Bingo & Gaming",
+    "team_member": "",
+    "aov_band": "$10k-50k",
+    "headcount": "110",
+    "website": "https://deltabingo.com",
+    "technologies": [
+      {
+        "category": "Font scripts",
+        "name": "Adobe Fonts"
+      },
+      {
+        "category": "CDN",
+        "name": "Cloudflare"
+      },
+      {
+        "category": "Security",
+        "name": "Cloudflare Bot Management"
+      },
+      {
+        "category": "Analytics",
+        "name": "Google Analytics"
+      },
+      {
+        "category": "Tag Management",
+        "name": "Google Tag Manager"
+      },
+      {
+        "category": "Service/Support",
+        "name": "Gravity Forms"
+      },
+      {
+        "category": "Miscellaneous",
+        "name": "HTTP/3"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "jQuery"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "jQuery Migrate"
+      },
+      {
+        "category": "CDN",
+        "name": "jsDelivr"
+      },
+      {
+        "category": "Security",
+        "name": "reCAPTCHA"
+      },
+      {
+        "category": "SSL/TLS certificate authorities",
+        "name": "Slick"
+      },
+      {
+        "category": "Service/Support",
+        "name": "SVG Support"
+      },
+      {
+        "category": "Font scripts",
+        "name": "Typekit"
+      },
+      {
+        "category": "CMS",
+        "name": "WordPress"
+      },
+      {
+        "category": "Translation",
+        "name": "WP Engine"
+      },
+      {
+        "category": "Service/Support",
+        "name": "Yoast SEO"
+      }
+    ],
+    "job_posting_tools": [],
+    "dns": {
+      "email_provider": [
+        "Microsoft 365"
+      ],
+      "email_senders": [
+        "Zendesk",
+        "Microsoft 365"
+      ]
+    },
+    "subdomains": {
+      "help": {
+        "url": "https://get.teamviewer.com/6fjgj6w",
+        "platform": ""
+      }
+    },
+    "description": "# Delta Bingo & Gaming Delta Bingo & Gaming is a Gambling Facilities and Casinos company. Delta Bingo & Gaming is a company with 18 locations in Ontario that offers bingo and Vegas-style machines. Delta Bingo & Gaming employs 110 people (+16.6% YoY, +36 people), founded in 1966. Headquartered in Oakville, Ontario, Canada, with presence in United States.",
+    "industry": "Energy",
+    "news_items": [
+      {
+        "title": "Betty acquires Kirkland Lake Bingo Hall, unlocking millions in charitable funding for communities in Northern Ontario",
+        "url": "https://www.newswire.ca/news-releases/betty-acquires-kirkland-lake-bingo-hall-unlocking-millions-in-charitable-funding-for-communities-in-northern-ontario-869596734.html",
+        "date": "2026-03-10T00:00:00.000Z",
+        "summary": "Acquisition launches Betty into regulated iBingo, preserves local jobs, and keeps a beloved community institution thriving. TORONTO, March 10, 2026 /CNW/ - Betty Gaming CA Ltd.",
+        "events": [
+          "M&A Activity",
+          "Funding/IPO",
+          "Expansion"
+        ],
+        "priority": 25
+      },
+      {
+        "title": "Random State pens Delta Bingo supply deal in Ontario - Gaming Intelligence",
+        "url": "https://www.gamingintelligence.com/sectors/online-gaming/214556-random-state-pens-delta-bingo-supply-deal-in-ontario/",
+        "date": "2025-06-03T00:00:00.000Z",
+        "summary": "Random State pens Delta Bingo supply deal in Ontario - Gaming Intelligence Random State has signed its first operator partner in Ontario with a deal to supply its multiplayer bingo product to Delta Bingo. The deal comes less than a month after Random State secured license approval in the Canadian pr",
+        "events": [
+          "Major Contract/Deal",
+          "Strategic Partnership",
+          "Expansion"
+        ],
+        "priority": 21
+      },
+      {
+        "title": "Delta Bingo & Gaming selects Strive for digital relaunch",
+        "url": "https://igamingfuture.com/delta-bingo-gaming-selects-strive-for-digital-relaunch/",
+        "date": "2025-04-16T00:00:00.000Z",
+        "summary": "Delta Bingo & Gaming selects Strive for digital relaunch | iGaming Future # Delta Bingo & Gaming selects Strive for digital relaunch - strive gaming - Delta Bingo & Gaming Casino [USA](https://igamingfuture.",
+        "events": [
+          "Expansion"
+        ],
+        "priority": 6
+      },
+      {
+        "title": "Strive Gaming to power Delta Bingo & Gaming re-launch - NEXT.io",
+        "url": "https://next.io/news/b2b-news/strive-gaming-power-delta-bingo/",
+        "date": "2025-04-16T00:00:00.000Z",
+        "summary": "Strive Gaming to power Delta Bingo &amp; Gaming re-launchStrive Gaming to power Delta Bingo &amp; Gaming re-launch BCGames_1400x300 Introducing SuperChance Roulette Discover a new live experience with thrilling moments &amp; frequent bonuses delivering wins up to 7200x wrapped in a superbly designed",
+        "events": [
+          "Expansion"
+        ],
+        "priority": 6
+      },
+      {
+        "title": "Delta Bingo Etobicoke opens its doors, bringing Bingo and Vegas ...",
+        "url": "https://retail-insider.com/bulletin/2025/04/delta-bingo-etobicoke-opens-its-doors-bringing-bingo-and-vegas-style-gaming-to-torontos-west-end/",
+        "date": "2025-04-07T00:00:00.000Z",
+        "summary": "Delta Bingo Etobicoke opens its doors, bringing Bingo and Vegas-style Gaming to Toronto's West End var zone = (window. innerWidth 850) ? 'sitewide_top_desktop_' : 'sitewide_top_mobile_'; document.",
+        "events": [
+          "Expansion"
+        ],
+        "priority": 6
+      }
+    ],
+    "compelling_events": [
+      "Strategic Partnership",
+      "Major Contract/Deal",
+      "M&A Activity",
+      "Expansion",
+      "Funding/IPO"
+    ],
+    "executive_changes": [],
+    "recent_news": "[M&A Activity, Funding/IPO, Expansion] Betty acquires Kirkland Lake Bingo Hall, unlocking millions in charitable funding for communities in Northern Ontario | [Major Contract/Deal, Strategic Partnership, Expansion] Random State pens Delta Bingo supply deal in Ontario - Gaming Intelligence | [Expansion] Delta Bingo & Gaming selects Strive for digital relaunch",
+    "news_with_links": [
+      {
+        "text": "[M&A Activity, Funding/IPO, Expansion] Betty acquires Kirkland Lake Bingo Hall, unlocking millions in charitable funding for communities in Northern Ontario",
+        "url": "https://www.newswire.ca/news-releases/betty-acquires-kirkland-lake-bingo-hall-unlocking-millions-in-charitable-funding-for-communities-in-northern-ontario-869596734.html",
+        "events": [
+          "M&A Activity",
+          "Funding/IPO",
+          "Expansion"
+        ]
+      },
+      {
+        "text": "[Major Contract/Deal, Strategic Partnership, Expansion] Random State pens Delta Bingo supply deal in Ontario - Gaming Intelligence",
+        "url": "https://www.gamingintelligence.com/sectors/online-gaming/214556-random-state-pens-delta-bingo-supply-deal-in-ontario/",
+        "events": [
+          "Major Contract/Deal",
+          "Strategic Partnership",
+          "Expansion"
+        ]
+      },
+      {
+        "text": "[Expansion] Delta Bingo & Gaming selects Strive for digital relaunch",
+        "url": "https://igamingfuture.com/delta-bingo-gaming-selects-strive-for-digital-relaunch/",
+        "events": [
+          "Expansion"
+        ]
+      },
+      {
+        "text": "[Expansion] Strive Gaming to power Delta Bingo & Gaming re-launch - NEXT.io",
+        "url": "https://next.io/news/b2b-news/strive-gaming-power-delta-bingo/",
+        "events": [
+          "Expansion"
+        ]
+      },
+      {
+        "text": "[Expansion] Delta Bingo Etobicoke opens its doors, bringing Bingo and Vegas ...",
+        "url": "https://retail-insider.com/bulletin/2025/04/delta-bingo-etobicoke-opens-its-doors-bringing-bingo-and-vegas-style-gaming-to-torontos-west-end/",
+        "events": [
+          "Expansion"
+        ]
+      }
+    ],
+    "new_executives": "",
+    "aov_multiplier": 1.0,
+    "score": 55,
+    "tech_score": 30,
+    "sf_opportunity": "Greenfield",
+    "crm": "None detected",
+    "key_technologies": "3 service tools",
+    "signals_summary": "tech_stack: 30; compelling_events: 100; new_executives: 0; company_size: 40; accessibility: 100",
+    "top_signals": [
+      "\ud83d\udd34 \"Betty acquires Kirkland Lake Bingo Hall, unlocking millions in charitable fundin\" (2026-03-10) \u2014 new leadership will revisit tech stack \u2014 ask about integration plans",
+      "\ud83d\udd35 No CRM detected \u2014 lead with 'how are you managing customer relationships today?'",
+      "\ud83d\udfe2 \"Betty acquires Kirkland Lake Bingo Hall, unlocking millions in charitable fundin\" (2026-03-10) \u2014 budget unlocked for platform investments \u2014 ask what they're prioritizing"
+    ],
+    "recommended_contacts": [
+      "CIO / CTO \u2014 technology decision maker",
+      "VP Sales or CRO \u2014 primary CRM user, drives requirements",
+      "CEO / President \u2014 strategic vision for customer-centric growth"
+    ]
+  }
+]

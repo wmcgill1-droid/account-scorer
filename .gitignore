@@ -1,0 +1,12 @@
+# Secrets
+.exa_key
+.streamlit/secrets.toml
+
+# Dev artifacts
+iteration*_results.json
+__pycache__/
+*.pyc
+.claude/
+
+# OS
+.DS_Store
