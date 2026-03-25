@@ -631,9 +631,15 @@ if uploaded:
             # Known header patterns — must match as whole words in short labels
             header_patterns = {
                 "account name", "account", "company name", "company",
+                "organization", "organisation", "client", "prospect",
+                "business name", "customer", "lead", "name",
                 "status", "aov band", "aov", "headcount", "head count",
-                "website", "notes", "tier", "industry", "owner",
-                "region", "revenue", "employee count", "employees",
+                "website", "domain", "url", "web",
+                "notes", "tier", "industry", "owner", "rep",
+                "region", "territory", "country", "province", "state",
+                "revenue", "annual revenue", "arr", "mrr",
+                "employee count", "employees", "headcount", "size",
+                "team member", "assigned to", "sales rep",
             }
             real_header_hits = 0
             for c in cols:
@@ -751,25 +757,40 @@ if uploaded:
             return str(col).lower()
 
         name_col = None
-        for col in all_companies.columns:
-            cl = _col_lower(col)
-            if "account" in cl and "name" in cl:
-                name_col = col
+        # Priority order for company name column detection
+        name_patterns = [
+            lambda cl: "account" in cl and "name" in cl,       # "Account Name"
+            lambda cl: "company" in cl and "name" in cl,       # "Company Name"
+            lambda cl: "business" in cl and "name" in cl,      # "Business Name"
+            lambda cl: cl == "account name",
+            lambda cl: cl == "company name",
+            lambda cl: cl in ("company", "account", "organization", "organisation",
+                             "client", "prospect", "business", "customer", "lead"),
+            lambda cl: cl == "name",
+        ]
+        for pattern in name_patterns:
+            if name_col:
                 break
-        if not name_col:
             for col in all_companies.columns:
-                cl = _col_lower(col)
-                if "company" in cl or cl == "name":
+                if col == "_team_member":
+                    continue
+                if pattern(_col_lower(col)):
                     name_col = col
                     break
         if not name_col:
             # Last resort: first string column
             for col in all_companies.columns:
-                if all_companies[col].dtype == object:
+                if col != "_team_member" and all_companies[col].dtype == object:
                     name_col = col
                     break
         if not name_col:
-            name_col = all_companies.columns[0]
+            name_col = [c for c in all_companies.columns if c != "_team_member"][0]
+
+        # Handle single-column files (just company names)
+        non_meta_cols = [c for c in all_companies.columns if c != "_team_member"]
+        if len(non_meta_cols) == 1:
+            name_col = non_meta_cols[0]
+            st.info("📋 Single-column file detected — will enrich using company names only.")
 
         # Find status column
         status_col = None
@@ -795,12 +816,16 @@ if uploaded:
         website_col = None
         for col in all_companies.columns:
             cl = _col_lower(col)
-            if "aov" in cl:
+            if "aov" in cl or cl == "contract value" or cl == "deal size":
                 aov_col = col
-            if "headcount" in cl or "head count" in cl or "employee" in cl:
+            if any(kw in cl for kw in ("headcount", "head count", "employee", "# of emp",
+                                        "company size", "num emp", "number of emp")):
                 hc_col = col
-            if "website" in cl or "url" in cl:
-                website_col = col
+            if any(kw in cl for kw in ("website", "url", "domain", "web address", "homepage")):
+                # Exclude LinkedIn URL columns
+                sample = all_companies[col].dropna().head(3).astype(str)
+                if not sample.str.contains("linkedin", case=False).any():
+                    website_col = col
 
         # Display summary
         col1, col2, col3, col4 = st.columns(4)
