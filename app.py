@@ -577,7 +577,7 @@ with st.sidebar:
     w_execs = st.slider("New Executives", 0, 100, 20)
     w_size = st.slider("Company Size", 0, 100, 15)
     w_access = st.slider("Accessibility", 0, 100, 10)
-    st.caption("AOV multiplier: $600k+ = 1.25x · $200k-600k = 1.15x · $100k-200k = 1.1x · $50k-100k = 1.05x · $10k-50k = 1.0x · <$10k = 0.9x · $0 = 0.75x")
+    st.caption("Adjust weights to prioritize what matters most for your territory.")
 
 
 # ── Main Area ───────────────────────────────────────────────────────
@@ -996,7 +996,6 @@ if st.session_state.results:
             "Rank": 0,
             "Score": r.get("score", 0),
             "Account": r.get("name", ""),
-            "AOV Band": r.get("aov_band", ""),
             "Team Member": r.get("team_member", ""),
             "Website": r.get("website", ""),
             "Industry": r.get("industry", ""),
@@ -1048,7 +1047,7 @@ if st.session_state.results:
 
     # Reorder columns so reps see the most actionable info first
     priority_cols = [
-        "Rank", "Score", "Account", "AOV Band", "SF Opportunity", "Team Member",
+        "Rank", "Score", "Account", "SF Opportunity", "Team Member",
         "Top Signals", "CRM", "Recommended Contacts",
         "Industry", "Headcount", "Website",
         "Key Technologies", "Tech Stack Score",
@@ -1073,7 +1072,6 @@ if st.session_state.results:
                 "Score", min_value=0, max_value=100, format="%d", width="small"
             ),
             "Account": st.column_config.TextColumn("Account", width="medium"),
-            "AOV Band": st.column_config.TextColumn("AOV Band", width="small"),
             "SF Opportunity": st.column_config.TextColumn("SF Opp", width="small"),
             "Top Signals": st.column_config.TextColumn("Top Signals", width="large"),
             "CRM": st.column_config.TextColumn("CRM", width="small"),
@@ -1110,7 +1108,7 @@ if st.session_state.results:
         highlight_fill = PatternFill(start_color="FFF2CC", end_color="FFF2CC", fill_type="solid")
 
         headers = [
-            "Rank", "Score", "Account", "AOV Band", "SF Opportunity",
+            "Rank", "Score", "Account", "SF Opportunity",
             "Team Member", "Top Signals", "Recommended Contacts",
             "CRM", "Industry", "Headcount", "Website",
             "Tech Score", "Key Technologies",
@@ -1128,82 +1126,76 @@ if st.session_state.results:
 
         for idx, r in enumerate(sorted_results, 2):
             rank = idx - 1
-            # New column order: Rank(1), Score(2), Account(3), AOV Band(4),
-            # SF Opp(5), Team(6), Top Signals(7), Recommended Contacts(8),
-            # CRM(9), Industry(10), Headcount(11), Website(12),
-            # Tech Score(13), Key Tech(14), Events(15), News(16),
-            # Execs(17), JP Tech(18), Description(19), News Links(20), LI Links(21)
+            # Column order: Rank(1), Score(2), Account(3),
+            # SF Opp(4), Team(5), Top Signals(6), Recommended Contacts(7),
+            # CRM(8), Industry(9), Headcount(10), Website(11),
+            # Tech Score(12), Key Tech(13), Events(14), News(15),
+            # Execs(16), JP Tech(17), Description(18), News Links(19), LI Links(20)
 
             ws.cell(row=idx, column=1, value=rank).border = thin_border
             ws.cell(row=idx, column=2, value=r.get("score", 0)).border = thin_border
             ws.cell(row=idx, column=3, value=r.get("name", "")).border = thin_border
 
-            # AOV Band (col 4)
-            aov_cell = ws.cell(row=idx, column=4, value=str(r.get("aov_band", "")))
-            aov_cell.border = thin_border
-            if r.get("aov_band"):
-                aov_cell.fill = highlight_fill
-
-            # SF Opportunity (col 5)
-            sf_cell = ws.cell(row=idx, column=5, value=r.get("sf_opportunity", ""))
+            # SF Opportunity (col 4)
+            sf_cell = ws.cell(row=idx, column=4, value=r.get("sf_opportunity", ""))
             sf_cell.border = thin_border
             if r.get("sf_opportunity") in ("Expansion", "Displacement"):
                 sf_cell.fill = highlight_fill
 
-            # Team Member (col 6)
-            ws.cell(row=idx, column=6, value=r.get("team_member", "")).border = thin_border
+            # Team Member (col 5)
+            ws.cell(row=idx, column=5, value=r.get("team_member", "")).border = thin_border
 
-            # Top Signals (col 7) — THE most important column for reps
+            # Top Signals (col 6) — THE most important column for reps
             top_sigs = r.get("top_signals", [])
-            sig_cell = ws.cell(row=idx, column=7, value="\n".join(top_sigs[:3]))
+            sig_cell = ws.cell(row=idx, column=6, value="\n".join(top_sigs[:3]))
             sig_cell.border = thin_border
             sig_cell.alignment = Alignment(wrap_text=True, vertical='top')
             if top_sigs:
                 sig_cell.fill = highlight_fill
 
-            # Recommended Contacts (col 8)
+            # Recommended Contacts (col 7)
             rec_contacts = r.get("recommended_contacts", [])
-            rc_cell = ws.cell(row=idx, column=8, value="\n".join(rec_contacts[:4]))
+            rc_cell = ws.cell(row=idx, column=7, value="\n".join(rec_contacts[:4]))
             rc_cell.border = thin_border
             rc_cell.alignment = Alignment(wrap_text=True, vertical='top')
 
-            # CRM (col 9)
-            ws.cell(row=idx, column=9, value=r.get("crm", "")).border = thin_border
+            # CRM (col 8)
+            ws.cell(row=idx, column=8, value=r.get("crm", "")).border = thin_border
 
-            # Industry (col 10)
-            ws.cell(row=idx, column=10, value=r.get("industry", "")).border = thin_border
+            # Industry (col 9)
+            ws.cell(row=idx, column=9, value=r.get("industry", "")).border = thin_border
 
-            # Headcount (col 11)
+            # Headcount (col 10)
             hc = r.get("headcount", "")
-            ws.cell(row=idx, column=11, value=str(hc) if hc else "").border = thin_border
+            ws.cell(row=idx, column=10, value=str(hc) if hc else "").border = thin_border
 
-            # Website as hyperlink (col 12)
+            # Website as hyperlink (col 11)
             url = r.get("website", "")
             if url:
-                cell = ws.cell(row=idx, column=12)
+                cell = ws.cell(row=idx, column=11)
                 cell.value = url
                 cell.hyperlink = url
                 cell.font = link_font
                 cell.border = thin_border
             else:
-                ws.cell(row=idx, column=12, value="").border = thin_border
+                ws.cell(row=idx, column=11, value="").border = thin_border
 
-            # Tech Score (col 13)
-            ws.cell(row=idx, column=13, value=r.get("tech_score", 0)).border = thin_border
+            # Tech Score (col 12)
+            ws.cell(row=idx, column=12, value=r.get("tech_score", 0)).border = thin_border
 
-            # Key Technologies (col 14)
-            ws.cell(row=idx, column=14, value=r.get("key_technologies", "")).border = thin_border
+            # Key Technologies (col 13)
+            ws.cell(row=idx, column=13, value=r.get("key_technologies", "")).border = thin_border
 
-            # Compelling events (col 15)
+            # Compelling events (col 14)
             events = r.get("compelling_events", [])
             events_str = ", ".join(events) if isinstance(events, list) else str(events)
-            ev_cell = ws.cell(row=idx, column=15, value=events_str)
+            ev_cell = ws.cell(row=idx, column=14, value=events_str)
             ev_cell.border = thin_border
             ev_cell.alignment = Alignment(wrap_text=True)
             if events:
                 ev_cell.fill = highlight_fill
 
-            # News (col 16)
+            # News (col 15)
             news_items = r.get("news_items", [])
             if news_items:
                 first_news = news_items[0]
@@ -1221,16 +1213,16 @@ if st.session_state.results:
                 full_text = f"{events_tag}{first_title}"
                 if extra_lines:
                     full_text += "\n" + "\n".join(extra_lines)
-                news_cell = ws.cell(row=idx, column=16, value=full_text)
+                news_cell = ws.cell(row=idx, column=15, value=full_text)
                 if first_url:
                     news_cell.hyperlink = first_url
                     news_cell.font = link_font
             else:
-                news_cell = ws.cell(row=idx, column=16, value="")
+                news_cell = ws.cell(row=idx, column=15, value="")
             news_cell.border = thin_border
             news_cell.alignment = Alignment(wrap_text=True, vertical='top')
 
-            # Executives (col 17)
+            # Executives (col 16)
             exec_changes = r.get("executive_changes", [])
             if exec_changes:
                 first_exec = exec_changes[0]
@@ -1245,68 +1237,68 @@ if st.session_state.results:
                     extra_lines.append(f"{p} — {t}")
                 if extra_lines:
                     full_text += "\n" + "\n".join(extra_lines)
-                exec_cell = ws.cell(row=idx, column=17, value=full_text)
+                exec_cell = ws.cell(row=idx, column=16, value=full_text)
                 if li:
                     exec_cell.hyperlink = li
                     exec_cell.font = link_font
             else:
-                exec_cell = ws.cell(row=idx, column=17, value="")
+                exec_cell = ws.cell(row=idx, column=16, value="")
             exec_cell.border = thin_border
             exec_cell.alignment = Alignment(wrap_text=True, vertical='top')
 
-            # Job Posting Tech (col 18)
+            # Job Posting Tech (col 17)
             jp_tools = r.get("job_posting_tools", [])
             if jp_tools:
                 jp_lines = [f"{t['name']} ({t['category']})" for t in jp_tools]
-                jp_cell = ws.cell(row=idx, column=18, value="\n".join(jp_lines))
+                jp_cell = ws.cell(row=idx, column=17, value="\n".join(jp_lines))
                 jp_cell.fill = highlight_fill
             else:
-                jp_cell = ws.cell(row=idx, column=18, value="")
+                jp_cell = ws.cell(row=idx, column=17, value="")
             jp_cell.border = thin_border
             jp_cell.alignment = Alignment(wrap_text=True, vertical='top')
 
-            # Description (col 19)
-            desc_cell = ws.cell(row=idx, column=19, value=r.get("description", "")[:500])
+            # Description (col 18)
+            desc_cell = ws.cell(row=idx, column=18, value=r.get("description", "")[:500])
             desc_cell.border = thin_border
             desc_cell.alignment = Alignment(wrap_text=True, vertical='top')
 
-            # News Links (col 20)
+            # News Links (col 19)
             news_urls = []
             for n in (r.get("news_items", []))[:5]:
                 url = n.get("url", "")
                 if url:
                     news_urls.append(url)
             if news_urls:
-                nl_cell = ws.cell(row=idx, column=20, value="\n".join(news_urls))
+                nl_cell = ws.cell(row=idx, column=19, value="\n".join(news_urls))
                 nl_cell.hyperlink = news_urls[0]
                 nl_cell.font = link_font
             else:
-                nl_cell = ws.cell(row=idx, column=20, value="")
+                nl_cell = ws.cell(row=idx, column=19, value="")
             nl_cell.border = thin_border
             nl_cell.alignment = Alignment(wrap_text=True, vertical='top')
 
-            # LinkedIn Links (col 21)
+            # LinkedIn Links (col 20)
             li_urls = []
             for e in (r.get("executive_changes", []))[:5]:
                 li = e.get("linkedin_url", "")
                 if li:
                     li_urls.append(li)
             if li_urls:
-                li_cell = ws.cell(row=idx, column=21, value="\n".join(li_urls))
+                li_cell = ws.cell(row=idx, column=20, value="\n".join(li_urls))
                 li_cell.hyperlink = li_urls[0]
                 li_cell.font = link_font
             else:
-                li_cell = ws.cell(row=idx, column=21, value="")
+                li_cell = ws.cell(row=idx, column=20, value="")
             li_cell.border = thin_border
             li_cell.alignment = Alignment(wrap_text=True, vertical='top')
 
         # Column widths — prioritize action columns (signals, contacts)
         widths = {
-            'A': 6, 'B': 8, 'C': 28, 'D': 14, 'E': 16,
-            'F': 16, 'G': 50, 'H': 45, 'I': 15,
-            'J': 18, 'K': 12, 'L': 30, 'M': 10,
-            'N': 25, 'O': 25, 'P': 50, 'Q': 45,
-            'R': 35, 'S': 50, 'T': 40, 'U': 40,
+            'A': 6, 'B': 8, 'C': 28, 'D': 16, 'E': 16,
+            'F': 50, 'G': 45, 'H': 15, 'I': 18,
+            'J': 12, 'K': 30, 'L': 10, 'M': 25,
+            'N': 25, 'O': 50, 'P': 45, 'Q': 35,
+            'R': 50, 'S': 40, 'T': 40,
         }
         for letter, width in widths.items():
             ws.column_dimensions[letter].width = width
@@ -1390,7 +1382,6 @@ if st.session_state.results:
                     <span style="background:{sc};color:white;padding:3px 10px;border-radius:6px;font-weight:700;font-size:0.85rem;">{score}</span>
                 </td>
                 <td style="font-weight:600;">{_esc(r.get('name', ''))}</td>
-                <td>{_esc(r.get('aov_band', ''))}</td>
                 <td><span style="background:{oc}15;color:{oc};padding:2px 8px;border-radius:4px;font-weight:600;font-size:0.8rem;">{_esc(opp)}</span></td>
                 <td>{_esc(r.get('team_member', ''))}</td>
                 <td style="font-size:0.85rem;">{signals}</td>
@@ -1409,14 +1400,12 @@ if st.session_state.results:
                 sc = _score_color(score)
                 opp = acct.get("sf_opportunity", "")
                 oc = _opp_color(opp)
-                aov = acct.get("aov_band", "")
                 crm_val = acct.get("crm", "")
                 website = acct.get("website", "")
 
                 sig_items = "".join(f"<li>{_linkify(s)}</li>" for s in acct.get("top_signals", [])[:3])
                 contact_items = "".join(f"<li>{_linkify(c)}</li>" for c in acct.get("recommended_contacts", [])[:3])
 
-                aov_html = f"<span style='color:#64748B;font-size:0.85rem;'>AOV: {_esc(aov)}</span>" if aov else ""
                 website_html = (f' · <a href="{_esc(website)}" target="_blank" style="color:#0176D3;">{_esc(website)}</a>' if website else "")
                 sig_html = (f'<div style="margin-bottom:0.5rem;"><strong style="font-size:0.9rem;">Why call:</strong>'
                             f'<ul style="margin:0.25rem 0 0 1.25rem;color:#334155;font-size:0.85rem;">{sig_items}</ul></div>' if sig_items else "")
@@ -1429,7 +1418,6 @@ if st.session_state.results:
                         <span style="background:{sc};color:white;font-weight:700;padding:4px 10px;border-radius:6px;font-size:0.85rem;">#{i} — {score}/100</span>
                         <span style="font-weight:700;font-size:1.05rem;color:#0F172A;">{_esc(acct.get('name', ''))}</span>
                         <span style="background:{oc}15;color:{oc};font-weight:600;padding:3px 8px;border-radius:4px;font-size:0.8rem;">{_esc(opp)}</span>
-                        {aov_html}
                     </div>
                     <div style="color:#475569;font-size:0.85rem;margin-bottom:0.5rem;">
                         CRM: <strong>{_esc(crm_val)}</strong>{website_html}
@@ -1602,7 +1590,7 @@ a:hover {{ text-decoration: underline; }}
         <h2>📊 Ranked Accounts</h2>
         <table>
             <tr>
-                <th>#</th><th>Score</th><th>Account</th><th>AOV</th><th>Opportunity</th>
+                <th>#</th><th>Score</th><th>Account</th><th>Opportunity</th>
                 <th>Rep</th><th>Top Signals</th><th>CRM</th><th>Contacts</th><th>Website</th>
             </tr>
             {table_rows}
@@ -1675,7 +1663,6 @@ a:hover {{ text-decoration: underline; }}
                 score = acct.get("score", 0)
                 name = acct.get("name", "")
                 sf_opp = acct.get("sf_opportunity", "Unknown")
-                aov = acct.get("aov_band", "")
                 crm_val = acct.get("crm", "")
                 website = acct.get("website", "")
 
@@ -1704,7 +1691,6 @@ a:hover {{ text-decoration: underline; }}
                                      padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">
                             {sf_opp}
                         </span>
-                        {"<span style='color: #64748B; font-size: 0.85rem;'>AOV: " + str(aov) + "</span>" if aov else ""}
                     </div>
                     <div style="color: #475569; font-size: 0.85rem; margin-bottom: 0.25rem;">
                         CRM: <strong>{crm_val}</strong>

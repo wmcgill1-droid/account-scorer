@@ -1899,9 +1899,9 @@ def get_executive_changes(company_name, exa_key):
 
         # Search for executive appointment announcements
         result = exa.search_and_contents(
-            f"{search_name} appoints new CEO CTO CIO CRO VP hire executive",
+            f"{search_name} appoints new CEO CTO CIO CRO VP SVP hire executive leadership",
             type="auto",
-            num_results=5,
+            num_results=8,
             text={"max_characters": 800},
             category="news",
         )
@@ -1915,8 +1915,15 @@ def get_executive_changes(company_name, exa_key):
             "Chief People", "Chief Product", "Chief Strategy",
             "Chief Commercial", "Chief Growth", "Chief Customer",
             "President", "Vice President", "VP",
+            "VP Sales", "VP Marketing", "VP Engineering", "VP Product",
+            "VP Customer Success", "VP Operations", "VP Finance",
+            "VP Business Development", "VP Revenue", "VP Growth",
+            "VP Technology", "VP IT", "VP Data", "VP Strategy",
+            "VP Partnerships", "VP Alliances", "VP Channels",
             "SVP", "EVP", "Managing Director", "General Manager",
             "Head of Sales", "Head of Marketing", "Head of Engineering",
+            "Head of Product", "Head of Revenue", "Head of Growth",
+            "Head of Customer Success", "Head of Partnerships",
         ]
 
         # Departure/retirement keywords — these indicate someone LEFT
@@ -2217,7 +2224,8 @@ def get_executive_changes(company_name, exa_key):
             "chief product": "chief product", "chief strategy": "chief strategy",
             "chief commercial": "chief commercial", "chief growth": "chief growth",
             "chief customer": "chief customer",
-            "vice president": "vp",
+            # Note: "vice president" is NOT normalized to just "vp"
+            # so "VP Sales" and "VP Marketing" stay as separate entries
         }
 
         if changes:
